@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.carousel-wrapper {
+    position: relative;
+    z-index: 10; /* Adjust as needed */
+  }
+  

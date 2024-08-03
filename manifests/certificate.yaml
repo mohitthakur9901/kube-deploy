@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: my-app-certificate
+spec:
+  secretName: my-app-certificate
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: myapp.192.168.1.100.xip.io
+  dnsNames:
+    - myapp.192.168.1.100.xip.io
